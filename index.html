@@ -9,20 +9,22 @@
   </head>
   <body>
     <nav class="navbar">
-      <img src="./assets/udix.png" alt="navbar_logo" />
-      <ul class="nav_links_container">
-        <li class="active">HOME</li>
+      <div class="wraper">
+        <img src="./assets/udix.png" alt="navbar_logo" />
+      </div>
+      <ul class="nav_links">
+        <li class="nav-item active">HOME</li>
         <li>BLOG</li>
         <li>PRODUCT</li>
         <li>CONTACTS</li>
       </ul>
-      <div class="buttons">
-        <button class="sign_in">SIGN IN</button>
-        <button class="sign_up">SIGN UP</button>
+      <div class="btn-wrapper">
+        <button class="btn btn-link">SIGN IN</button>
+        <button class="btn btn-outline-primary">SIGN UP</button>
       </div>
     </nav>
-    <section class="section_1">
-      <div class="div_for_h_p">
+    <section class="intro">
+      <div class="intro-content">
         <h1>Get It Together And Manage Projects the Right Way.</h1>
         <p>
           udix is the world’s first smart workspace. We bring all your team’s
@@ -30,14 +32,14 @@
         </p>
       </div>
       <div class="input_field">
-        <div class="text-input">
-          <input type="text" placeholder="Email" />
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Email" />
         </div>
         <button>Subscribe</button>
       </div>
     </section>
-    <section class="section-2">
-      <section class="text-part">
+    <section class="services">
+      <section class="text-wrapper">
         <h1>Solutions that will change your business forever</h1>
         <p>
           Some networks believe that by only offering a basic tracking system
@@ -46,15 +48,15 @@
           together with a team of creative experts.
         </p>
       </section>
-      <section class="cards-part">
-        <div class="card">
+      <section class="cards">
+        <div class="card card-active">
           <div class="logo-wrapper">
             <img src="./assets/card-one-logo.png" alt="card-one-logo" />
           </div>
           <h2>Web Services</h2>
           <p>Some networks believe that by only offering.</p>
           <div class="logo-wrapper">
-            <img src="./assets/vector.png" alt="Vector-logo" />
+            <img src="./assets/Vector (Stroke).svg" alt="Vector-logo" />
           </div>
         </div>
         <div class="card">
@@ -64,7 +66,7 @@
           <h2>CRM Product</h2>
           <p>Some networks believe that by only offering.</p>
           <div class="logo-wrapper">
-            <img src="./assets/vector.png" alt="Vector-logo" />
+            <img src="./assets/Vector (Stroke).png" alt="Vector-logo" />
           </div>
         </div>
         <div class="card">
@@ -74,10 +76,108 @@
           <h2>Mobile App</h2>
           <p>Some networks believe that by only offering.</p>
           <div class="logo-wrapper">
-            <img src="./assets/vector.png" alt="Vector-logo" />
+            <img src="./assets/Vector (Stroke).png" alt="Vector-logo" />
           </div>
         </div>
       </section>
     </section>
+    <section class="statistics">
+      <div class="statistics-text">
+        <div class="left">
+          <h1>1,000 M</h1>
+          <p>Clicks annually through system</p>
+        </div>
+        <div class="middle">
+          <h1>4.8 M</h1>
+          <p>Relationships created annually</p>
+        </div>
+        <div class="right">
+          <h1>100 +</h1>
+          <p>Advertisers with udix</p>
+        </div>
+      </div>
+      <div class="statistics-btn">
+        <button class="btn btn-primary">Sign Up Now!</button>
+      </div>
+    </section>
+    <section class="our-solutions">
+      <div class="image-part">
+        <img src="./assets/image-1.png" alt="vertical-image-section-4" />
+      </div>
+      <div class="text-part">
+        <div class="creativity-and-technology">
+          <h1>Creativity & Technology</h1>
+          <p>
+            Some networks believe that by only offering a basic tracking system
+            their affiliates can reach a high level of creativity. We like to
+            set the bar a lot higher by offering you cutting-edge tech solutions
+            together with a team of creative experts on-call with the tools you
+            need based on real-time results
+          </p>
+        </div>
+        <div class="true-values">
+          <h1>Defines our true value</h1>
+          <ul>
+            <li>
+              Some networks believe that by only offering a basic tracking
+              system
+            </li>
+            <li>
+              Some networks believe that by only offering a basic tracking
+              system
+            </li>
+            <li>
+              Some networks believe that by only offering a basic tracking
+              system
+            </li>
+          </ul>
+        </div>
+        <div class="chek-our-solutions">
+          <p>Check our solutions</p>
+          <div class="roud-btn-wrapper">
+            <img src="./assets/round-btn.png" alt="rout-btn-logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="logo-and-links">
+        <div class="footer-logo-wrapper">
+          <img src="./assets/udix_footer.png" alt="footer logo" />
+        </div>
+        <div class="footer-links-and-btns">
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">PRODUCT</a></li>
+              <li><a href="#">CONTACTS</a></li>
+            </ul>
+          </div>
+          <div class="footer-btn">
+            <button class="btn btn-link">SIGN IN</button>
+            <button class="btn btn-outline-primary">SIGN UP</button>
+          </div>
+        </div>
+      </section>
+      <section class="p-and-social-icons">
+        <div class="footer-paragraph">
+          <p>
+            udix is a market-leading provider of digital marketing services,
+            using proprietary tools and methodologies to generate high-value
+            engagement for our customers.
+          </p>
+        </div>
+        <div class="footer-social-icons">
+          <ul>
+            <li><img src="./assets/facebook.png" /></li>
+            <li><img src="./assets/youtube.png" /></li>
+            <li><img src="./assets/linkedIn.png" /></li>
+            <li><img src="./assets/googleplus.png" /></li>
+            <li><img src="./assets/skype.png" /></li>
+          </ul>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
