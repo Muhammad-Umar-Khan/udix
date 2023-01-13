@@ -9,19 +9,31 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  padding: 55px 70px;
+  justify-content: space-between;
   align-items: center;
   line-height: 20px;
 }
 
+.logo-and-navlinks {
+  display: flex;
+}
+
+.wraper {
+  cursor: pointer;
+}
+
 .nav_links {
+  padding-left: 120px;
   display: flex;
   list-style: none;
+  font-weight: 600;
   font-size: 14px;
 }
 
 .nav_links li {
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .btn-wrapper {
@@ -33,6 +45,7 @@ body {
 }
 
 .btn-link {
+  cursor: pointer;
   color: #381ddb;
   border: none;
   font-size: 14px;
@@ -44,6 +57,7 @@ body {
 }
 
 .btn-outline-primary {
+  cursor: pointer;
   font-size: 14px;
   font-weight: 600;
   border: 1px solid #381ddb;
@@ -135,6 +149,7 @@ body {
 }
 
 .card {
+  color: black;
   padding: 45px;
   border: 1px solid #381ddb;
   display: flex;
@@ -143,32 +158,56 @@ body {
   margin: 75px;
 }
 
+/* .card img{
+  color: #381ddb;
+} */
+
 .card h2 {
   font-size: 24px;
   font-weight: 800;
 }
 
-.card-active {
-  background: #381ddb;
-  color: #f5f5f5;
-}
-
 /* section-3 stylyong */
 
-.statistics {
+/* .statistics {
   margin: 3%;
   height: 500px;
   background-image: url("./assets/Rectangle.png");
   background-size: cover;
-  /* opacity: 0.1; */
+  opacity: 0.1;
   background-repeat: no-repeat;
+} */
+
+.statistics {
+  position: relative;
 }
 
-.statistics-content{
+.statistics-image-wrapper {
+  position: relative;
+}
+
+#statistics-image {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+}
+
+.image-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.stats-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .statistics-text {
@@ -184,7 +223,7 @@ body {
 
 .statistics-text div {
   text-align: center;
-  /* margin-top: 118px; */
+  margin-top: 118px;
   margin-right: 196px;
 }
 
@@ -195,12 +234,6 @@ body {
   margin-top: 143px;
 }
 
-.statistics-btn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .btn-primary {
   cursor: pointer;
   color: #f5f5f5;
@@ -209,16 +242,6 @@ body {
   border: none;
   background: #381ddb;
 }
-
-/* .image-wrapper{
-display: flex;
-justify-content: center;
-align-items: center;
-} */
-
-/* .image-wrapper img{
-  width: 100%;
-} */
 
 .our-solutions {
   margin: 3%;
@@ -236,18 +259,28 @@ align-items: center;
 
 .creativity-and-technology {
   margin-top: 150px;
-  width: 530px;
+  max-width: 530px;
   display: flex;
   justify-content: start;
   flex-direction: column;
 }
 
-.true-values{
+.true-values {
   text-align: left;
 }
 
-.true-values ul{
+.true-values ul {
   padding-left: 24px;
+}
+
+.card:hover {
+  background: #381ddb;
+  color: #f5f5f5;  
+  fill: #f5f5f5;
+}
+
+svg:hover{
+  fill: #f5f5f5;
 }
 
 .chek-our-solutions {
@@ -293,17 +326,19 @@ footer {
 }
 
 .footer-social-icons ul {
+  padding-right: 100px;
   display: flex;
 }
 
 .footer-social-icons ul li {
   list-style: none;
-  margin-right: 50px;
+  padding: 30px;
 }
 
 .footer-paragraph {
   max-width: 400px;
   padding-left: 100px;
+  font-size: 12px;
   display: flex;
   text-align: start;
 }
@@ -339,10 +374,14 @@ footer {
   font-weight: 600;
 }
 
-/* .btn-sign-up-footer {
-  padding: ;
-} */
-
 .btn-sign-in-footer {
   background: none;
+}
+
+.cards .card .logo-wrapper{
+  color: #381ddb;
+}
+
+.cards .card:hover .logo-wrapper{
+  color: #f5f5f5;
 }
